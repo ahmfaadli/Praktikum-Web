@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Jumlah Dua Bilangan</title>
+</head>
+<body>
+    <h1>Menghitung Jumlah Dua Bilangan</h1>
+
+    <input type="number" id="bilangan1" onchange="hitungbilangan()">
+
+    <h1>+</h1>
+
+    <input type="number" id="bilangan2" onchange="hitungbilangan()">
+
+    <h1>= <span id="hasil"></span></h1>
+    
+    <script>
+        function hitungbilangan() {
+            let bilangan1 = perseInt(document.getElementById("bilangan1").value)
+
+            let bilangan2 = perseInt(document.getElementById("bilangan2").value)
+
+            let hasil = bilangan1 + bilangan2
+
+            document.getElementById('hasil').innerHTML = hasil
+        }
+    </script>
+</body>
+</html>
