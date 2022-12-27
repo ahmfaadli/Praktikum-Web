@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="validasi.js"></script>
+
+</head>
+<body>
+
+    <h3>Form Validaton</h3>
+
+    <form>
+        <table>
+            <tr>
+                <td><table for="nama">Nama Lengkap</table></td>
+                <td>:</td>
+                <td><input type="text" placeholder="nama anda" id="nama" required><span id="errorname"></span></td>
+            </tr>
+            <tr>
+                <td><table for="email">Email</table></td>
+                <td>:</td>
+                <td><input type="text" placeholder="email anda" id="email" required><span id="errorname"></span></td>
+            </tr>
+            <tr>
+                <td><table for="waktu">Jam Keberangkatan</table></td>
+                <td>:</td>
+                <td><input type="time" id="waktu" required><span id="errorname"></span></td>
+            </tr>
+            <tr>
+                <td><table for="nama">Tujuan Keberangkatan</table></td>
+                <td>:</td>
+                <td><input type="text" placeholder="Tujun Anda" id="tujuan" required><span id="errorname"></span></td>
+            </tr>
+            <tr>
+                <td><table for="Tiket">Jumlah Tiket</table></td>
+                <td>:</td>
+                <td>
+                    <select name="tiket" id="tiket" required>
+                        <option value="Silahkan Pilih"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select><span id="errortiket"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Pesan Sekarang" onclick="pesan()"></td>
+            </tr>
+        </table>
+    </form>
+    
+    <div>
+        <h3 id="inputHasil"></h3>
+        <p id="inputName"></p>
+        <p id="inputEmail"></p>
+        <p id="inputWaktu"></p>
+        <p id="inputTujuan"></h3>
+        <p id="inputTiket"></p>
+    </div>
+
+</body>
+</html>
